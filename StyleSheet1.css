@@ -1,0 +1,303 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman";
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/tasbehimage.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* NavBar */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 40px;
+    color: saddlebrown;
+    user-select: none;
+    font-weight: 900;
+}
+
+.navigation {
+    margin-left: 430px;
+}
+
+    .navigation a {
+        position: relative;
+        font-size: 20px;
+        color: saddlebrown;
+        text-decoration: none;
+        font-weight: 900;
+        margin-left: 30px;
+    }
+     .navigation a::after{
+        content:'';
+        position:absolute;
+        left:0;
+        bottom:-6px;
+        width:100%;
+        height:3px;
+        background:saddlebrown;
+        border-radius:5px;
+        transform:scaleX(0);
+        transition:transform .5s;
+        transform-origin:right;
+    }
+    .navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+        
+    .navigation .btnLogin-popup {
+        width: 130px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid saddlebrown;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 20px;
+        color: saddlebrown;
+        font-weight: 600;
+        margin-left: 100px;
+        transition: 0.5s;
+    }
+
+        .navigation .btnLogin-popup:hover {
+            background: saddlebrown;
+            color: burlywood;
+        }
+
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}*/
+/*.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }*/
+
+/*.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+
+/* End NavBar */
+.content {
+    color: saddlebrown;
+    font-size: 80px;
+    font-weight: 900;
+    margin-right: 540px;
+}
+
+.desc {
+    color: saddlebrown;
+    font-size: 30px;
+    margin-right: 540px;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+    .wrapper .form-box {
+        width: 100%;
+        padding: 40px;
+    }
+    .wrapper .icon-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        background: saddlebrown;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+.form-box h2 {
+    font-size: 30px;
+    color: saddlebrown;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid saddlebrown;
+    margin: 30px 0;
+}
+
+    .input-box .label {
+        color: saddlebrown;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .input-box .input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 1px solid saddlebrown;
+        border-radius: 5px;
+        color: saddlebrown;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0 5px 0 5px;
+    }
+
+.remember-forgot {
+    font-size: 20px;
+    color: saddlebrown;
+    font-weight: 300;
+    margin: -15px 0 15px;
+    /*display:flex;*/
+    justify-content: space-between;
+}
+
+#CheckBox1 {
+    accent-color: saddlebrown;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+    .remember-forgot a:hover {
+        text-decoration: underline;
+    }
+
+.btn {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    color: saddlebrown;
+    border: 2px solid saddlebrown;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+    .btn:hover {
+        background: saddlebrown;
+        color: burlywood;
+    }
+
+.login-register {
+    font-size: 20px;
+    color: saddlebrown;
+    text-align: center;
+    margin-top: 30px;
+}
+
+    .login-register p a {
+        color: saddlebrown;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        .login-register p a:hover {
+            text-decoration: underline;
+        }
+/*  Tasbeeh    */
+.container{
+    margin:20px 0;
+}
+.text1 {
+    color: saddlebrown;
+    font-size: 20px;
+    font-weight: 400;
+}
+.input1 {
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+    color: saddlebrown;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 5px 0 5px;
+}
+.btnTasbeeh{
+    height:50px;
+    width:100px;
+    font-size:25px;
+    color:white;
+    font-weight:500;
+    background:green;
+    margin-left:30px;
+    border:none;
+    
+}
+.error-message {
+    color: #ff0000;
+}
+
+#togglePassword {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons8-hide-password-24.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
